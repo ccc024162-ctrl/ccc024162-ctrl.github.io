@@ -1,0 +1,372 @@
+{
+  "version": "v8.0-art-b",
+  "generatedAt": "2026-07-17T14:58:59+00:00",
+  "generator": "agent-gw generate_image (image_generation plugin)",
+  "designTokens": {
+    "background": "#0B0B0B",
+    "gold": "#C9A96A",
+    "lightDirection": "upper-left",
+    "negativeSpace": "subject centered-right, wide dark margins for camera push-in"
+  },
+  "budgets": {
+    "desktopBytes": 358400,
+    "mobileBytes": 153600,
+    "quality": "webp q80 (auto-step-down)"
+  },
+  "pipeline": [
+    "bottom-left watermark removal (edge-hard feathered dark-floor fill; diffusion inpaint for light-sweep)",
+    "black-level normalize to RGB(11,11,11)",
+    "LANCZOS resize to desktop/mobile variants",
+    "webp q80 method=6 (adaptive floor q70)"
+  ],
+  "blackPoint": [
+    11,
+    11,
+    11
+  ],
+  "count": 8,
+  "transitionAssets": [
+    "shared-ring",
+    "shared-light-sweep",
+    "shared-obsidian-shatter"
+  ],
+  "assets": [
+    {
+      "key": "act06",
+      "act": 6,
+      "kind": "macro",
+      "subject": "产业结构 — 数据轨道环与光束",
+      "prompt": "Concentric orbital rings made of fine golden data light encircling a dark invisible core, thin precise golden light beams crossing diagonally, like a precision brass orrery rendered in light, macro lens look. Museum-grade black and gold cinematic key art. Solid deep black background. Warm antique gold light. Single dramatic light source from the upper left. Main subject centered slightly right of frame. Vast negative space on all four sides. Precise, restrained, deep, high-end cinematic mood. No text, no letters, no numbers, no watermark, no logo, no UI.",
+      "ratio": "16:9",
+      "genResolution": "2K",
+      "rawSize": [
+        2048,
+        1152
+      ],
+      "rawStaging": "tools/.v8-art-b-raw/act06-orbital.png",
+      "outputs": {
+        "desktop": {
+          "file": "act06-orbital-1920.webp",
+          "width": 1920,
+          "height": 1080,
+          "bytes": 49318,
+          "quality": 80,
+          "budget": 358400
+        },
+        "mobile": {
+          "file": "act06-orbital-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 18080,
+          "quality": 80,
+          "budget": 153600
+        }
+      },
+      "qa": {
+        "watermarkMode": "fill",
+        "blackPointAfter": [
+          11,
+          11,
+          13
+        ],
+        "watermarkGhostMaxLum": 11.7
+      }
+    },
+    {
+      "key": "act07",
+      "act": 7,
+      "kind": "macro",
+      "subject": "赛事城市 — 城市等高线地图与金色光点",
+      "prompt": "A vast dark city map seen from directly above, drawn only with thin glowing golden topographic contour lines and a few small warm gold light dots marking stadium locations, like gold inlay on black lacquer. Museum-grade black and gold cinematic key art. Solid deep black background. Warm antique gold light. Single dramatic light source from the upper left. Main subject centered slightly right of frame. Vast negative space on all four sides. Precise, restrained, deep, high-end cinematic mood. No text, no letters, no numbers, no watermark, no logo, no UI.",
+      "ratio": "16:9",
+      "genResolution": "2K",
+      "rawSize": [
+        2048,
+        1152
+      ],
+      "rawStaging": "tools/.v8-art-b-raw/act07-contour-city.png",
+      "outputs": {
+        "desktop": {
+          "file": "act07-contour-city-1920.webp",
+          "width": 1920,
+          "height": 1080,
+          "bytes": 117262,
+          "quality": 80,
+          "budget": 358400
+        },
+        "mobile": {
+          "file": "act07-contour-city-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 28414,
+          "quality": 80,
+          "budget": 153600
+        }
+      },
+      "qa": {
+        "watermarkMode": "fill",
+        "blackPointAfter": [
+          11,
+          11,
+          11
+        ],
+        "watermarkGhostMaxLum": 11.0
+      }
+    },
+    {
+      "key": "act08",
+      "act": 8,
+      "kind": "macro",
+      "subject": "职业链条 — 战术桌蓝图与镜头光",
+      "prompt": "A black obsidian tactical command table seen from above at a shallow angle, etched with faint golden blueprint schematic lines, circles and arrows of a strategy diagram, soft warm gold lens glow from the upper left. Museum-grade black and gold cinematic key art. Solid deep black background. Warm antique gold light. Single dramatic light source from the upper left. Main subject centered slightly right of frame. Vast negative space on all four sides. Precise, restrained, deep, high-end cinematic mood. No text, no letters, no numbers, no watermark, no logo, no UI.",
+      "ratio": "16:9",
+      "genResolution": "2K",
+      "rawSize": [
+        2048,
+        1152
+      ],
+      "rawStaging": "tools/.v8-art-b-raw/act08-tactics-table.png",
+      "outputs": {
+        "desktop": {
+          "file": "act08-tactics-table-1920.webp",
+          "width": 1920,
+          "height": 1080,
+          "bytes": 53862,
+          "quality": 80,
+          "budget": 358400
+        },
+        "mobile": {
+          "file": "act08-tactics-table-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 17148,
+          "quality": 80,
+          "budget": 153600
+        }
+      },
+      "qa": {
+        "watermarkMode": "fill",
+        "blackPointAfter": [
+          15,
+          14,
+          13
+        ],
+        "watermarkGhostMaxLum": 14.0
+      }
+    },
+    {
+      "key": "act09",
+      "act": 9,
+      "kind": "macro",
+      "subject": "全球回响 — 地球弧线与信号弧光",
+      "prompt": "The thin luminous arc of Earth horizon curving across the lower right of the frame, warm golden rim light on the atmosphere, three elegant golden signal arcs rising from the planet surface into deep black space, vast emptiness. Museum-grade black and gold cinematic key art. Solid deep black background. Warm antique gold light. Single dramatic light source from the upper left. Main subject centered slightly right of frame. Vast negative space on all four sides. Precise, restrained, deep, high-end cinematic mood. No text, no letters, no numbers, no watermark, no logo, no UI.",
+      "ratio": "16:9",
+      "genResolution": "2K",
+      "rawSize": [
+        2048,
+        1152
+      ],
+      "rawStaging": "tools/.v8-art-b-raw/act09-earth-arc.png",
+      "outputs": {
+        "desktop": {
+          "file": "act09-earth-arc-1920.webp",
+          "width": 1920,
+          "height": 1080,
+          "bytes": 31088,
+          "quality": 80,
+          "budget": 358400
+        },
+        "mobile": {
+          "file": "act09-earth-arc-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 10906,
+          "quality": 80,
+          "budget": 153600
+        }
+      },
+      "qa": {
+        "watermarkMode": "fill",
+        "blackPointAfter": [
+          11,
+          11,
+          11
+        ],
+        "watermarkGhostMaxLum": 11.0
+      }
+    },
+    {
+      "key": "act10",
+      "act": 10,
+      "kind": "macro",
+      "subject": "未来 — 石门与门缝金光",
+      "prompt": "A monumental ancient dark stone gate slightly ajar, intense warm golden light leaking through the narrow vertical seam between the two massive doors, fine dust motes floating in the light beam, monolithic and quiet. Museum-grade black and gold cinematic key art. Solid deep black background. Warm antique gold light. Single dramatic light source from the upper left. Main subject centered slightly right of frame. Vast negative space on all four sides. Precise, restrained, deep, high-end cinematic mood. No text, no letters, no numbers, no watermark, no logo, no UI.",
+      "ratio": "16:9",
+      "genResolution": "2K",
+      "rawSize": [
+        2048,
+        1152
+      ],
+      "rawStaging": "tools/.v8-art-b-raw/act10-stone-gate.png",
+      "outputs": {
+        "desktop": {
+          "file": "act10-stone-gate-1920.webp",
+          "width": 1920,
+          "height": 1080,
+          "bytes": 113860,
+          "quality": 80,
+          "budget": 358400
+        },
+        "mobile": {
+          "file": "act10-stone-gate-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 31788,
+          "quality": 80,
+          "budget": 153600
+        }
+      },
+      "qa": {
+        "watermarkMode": "fill",
+        "blackPointAfter": [
+          11,
+          11,
+          11
+        ],
+        "watermarkGhostMaxLum": 11.0
+      }
+    },
+    {
+      "key": "shared-ring",
+      "kind": "transition-occluder",
+      "subject": "转场件 — 金色圆环正视图（中心纯黑，穿越转场）",
+      "prompt": "A single perfect thin circular ring of warm golden light, viewed exactly straight-on, perfectly centered in the frame, like an eclipse corona or a camera aperture made of light. The interior of the ring is solid pure black. Everything outside the ring is solid pure black. Clean, minimal, no smoke, no particles, no texture, no gradient backdrop, no text, no watermark, no logo.",
+      "ratio": "1:1",
+      "genResolution": "1K",
+      "rawSize": [
+        1024,
+        1024
+      ],
+      "rawStaging": "tools/.v8-art-b-raw/shared-ring.png",
+      "outputs": {
+        "desktop": {
+          "file": "shared-ring-1024.webp",
+          "width": 1024,
+          "height": 1024,
+          "bytes": 13588,
+          "quality": 80,
+          "budget": 153600
+        },
+        "mobile": {
+          "file": "shared-ring-512.webp",
+          "width": 512,
+          "height": 512,
+          "bytes": 5440,
+          "quality": 80,
+          "budget": 76800
+        }
+      },
+      "qa": {
+        "watermarkMode": "fill",
+        "blackPointAfter": [
+          11,
+          11,
+          11
+        ],
+        "watermarkGhostMaxLum": 11.0
+      },
+      "usage": "transition",
+      "forTransition": true,
+      "transitionRole": "pass-through",
+      "suggestedBlendMode": "screen"
+    },
+    {
+      "key": "shared-light-sweep",
+      "kind": "transition-occluder",
+      "subject": "转场件 — 斜向金色光扫条（大部纯黑）",
+      "prompt": "One single diagonal band of warm golden light sweeping from lower left to upper right across a solid pure black background, soft elegant gradient falloff at the band edges, most of the frame remains solid pure black, no texture, no particles, no smoke, no text, no watermark, no logo, minimal cinematic light streak.",
+      "ratio": "16:9",
+      "genResolution": "2K",
+      "rawSize": [
+        2048,
+        1152
+      ],
+      "rawStaging": "tools/.v8-art-b-raw/shared-light-sweep.png",
+      "outputs": {
+        "desktop": {
+          "file": "shared-light-sweep-1920.webp",
+          "width": 1920,
+          "height": 1080,
+          "bytes": 16936,
+          "quality": 80,
+          "budget": 358400
+        },
+        "mobile": {
+          "file": "shared-light-sweep-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 6628,
+          "quality": 80,
+          "budget": 153600
+        }
+      },
+      "qa": {
+        "watermarkMode": "inpaint",
+        "blackPointAfter": [
+          138,
+          102,
+          36
+        ],
+        "watermarkGhostMaxLum": null
+      },
+      "usage": "transition",
+      "forTransition": true,
+      "transitionRole": "light-sweep",
+      "suggestedBlendMode": "screen"
+    },
+    {
+      "key": "shared-obsidian-shatter",
+      "kind": "transition-occluder",
+      "subject": "转场件 — 黑曜石碎裂前景片（边缘碎裂、中心大黑洞）",
+      "prompt": "Sharp shattered black obsidian glass fragments floating only along the outer edges and corners of the frame, their fractured edges catching thin warm gold rim light, the center of the image is one large clean empty hole of solid pure black, fragments float on a solid pure black background, no text, no watermark, no logo, minimal, cinematic, high contrast.",
+      "ratio": "16:9",
+      "genResolution": "2K",
+      "rawSize": [
+        2048,
+        1152
+      ],
+      "rawStaging": "tools/.v8-art-b-raw/shared-obsidian-shatter.png",
+      "outputs": {
+        "desktop": {
+          "file": "shared-obsidian-shatter-1920.webp",
+          "width": 1920,
+          "height": 1080,
+          "bytes": 73582,
+          "quality": 80,
+          "budget": 358400
+        },
+        "mobile": {
+          "file": "shared-obsidian-shatter-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 24978,
+          "quality": 80,
+          "budget": 153600
+        }
+      },
+      "qa": {
+        "watermarkMode": "fill",
+        "blackPointAfter": [
+          11,
+          11,
+          11
+        ],
+        "watermarkGhostMaxLum": 11.0
+      },
+      "usage": "transition",
+      "forTransition": true,
+      "transitionRole": "occlusion-wipe",
+      "suggestedBlendMode": "screen"
+    }
+  ]
+}

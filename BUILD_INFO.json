@@ -1,0 +1,16 @@
+{
+  "project": "china-esports-black-gold-motion",
+  "version": "8.0.0",
+  "buildId": "2026-07-17-v8.0-gilt-archive-cinematic",
+  "builtAtUtc": "2026-07-17T00:00:00Z",
+  "archiveRoot": "index.html + assets/",
+  "runtime": "Vite + TypeScript + GSAP Observer + Three.js + DOM/CSS/SVG/WebP + WebGL2 + WebAudio",
+  "chapters": 10,
+  "semanticNodes": 40,
+  "notes": "v8.0 电影化升级：CameraDirector 十幕镜头计划（阻尼推拉回落 + 速度模糊 ≤1.2px）、FocusRig 焦平面 rack focus、ParallaxField 三档深度视差；转场系统运动匹配（CAMERA_VECTORS）+ 9 对巨号 FLIP + 4 对图形匹配 + 2 处遮挡转场；十幕 AI 宏景层（act01-10，黑位归一 RGB(11,11,11)，熔边 mask）+ 共享 ring/light-sweep/shatter 资产 + 黑曜石金缮/黑漆材质底纹；深色烟熏玻璃材质体系（glass-panel/chip/float，同屏 backdrop-filter ≤4，鼠标光照变量）；WebGL 首幕 push-through 镜头 + 金器 fresnel 边缘光 + 环境景深；WebAudio 声音设计（whoosh/impact/chime，默认关，localStorage 记忆）；十幕十种动态文字入场（mask/tracking/chars/slices/stroke/blur/perspective/sweep/sync/lines）。",
+  "uniqueRuntimeArt": 94,
+  "cinematicVistaArt": 15,
+  "runtimeNodePlateCount": 40,
+  "runtimeNodeDetailCount": 40,
+  "qaViewports": ["1440x900", "390x844"]
+}

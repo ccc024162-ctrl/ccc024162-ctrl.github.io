@@ -1,0 +1,847 @@
+{
+  "version": "7.0.0",
+  "count": 40,
+  "assetsPerNode": 2,
+  "nodes": [
+    {
+      "node": 1,
+      "scene": 0,
+      "key": "2003",
+      "direction": "low-poly naming aperture",
+      "sourceReference": "assets/generated/reference-v6.7/n01-s01-2003-reference.png",
+      "plate": "./assets/art/v6.7/nodes/n01-2003-plate.webp",
+      "detail": "./assets/art/v6.7/nodes/n01-2003-detail.webp",
+      "crop": {
+        "x": 560,
+        "y": 120,
+        "width": 940,
+        "height": 760
+      },
+      "detailCrop": {
+        "x": 720,
+        "y": 290,
+        "width": 560,
+        "height": 380
+      }
+    },
+    {
+      "node": 2,
+      "scene": 0,
+      "key": "2008",
+      "direction": "archival sequence drawer",
+      "sourceReference": "assets/generated/reference-v6.7/n02-s01-2008-reference.png",
+      "plate": "./assets/art/v6.7/nodes/n02-2008-plate.webp",
+      "detail": "./assets/art/v6.7/nodes/n02-2008-detail.webp",
+      "crop": {
+        "x": 480,
+        "y": 120,
+        "width": 1030,
+        "height": 760
+      },
+      "detailCrop": {
+        "x": 750,
+        "y": 290,
+        "width": 560,
+        "height": 380
+      }
+    },
+    {
+      "node": 3,
+      "scene": 0,
+      "key": "2016",
+      "direction": "education cabinet",
+      "sourceReference": "assets/generated/reference-v6.7/n03-s01-2016-reference.png",
+      "plate": "./assets/art/v6.7/nodes/n03-2016-plate.webp",
+      "detail": "./assets/art/v6.7/nodes/n03-2016-detail.webp",
+      "crop": {
+        "x": 680,
+        "y": 40,
+        "width": 850,
+        "height": 900
+      },
+      "detailCrop": {
+        "x": 830,
+        "y": 280,
+        "width": 560,
+        "height": 380
+      }
+    },
+    {
+      "node": 4,
+      "scene": 0,
+      "key": "2023",
+      "direction": "ceremonial arena portal",
+      "sourceReference": "assets/generated/reference-v6.7/n04-s01-2023-reference.png",
+      "plate": "./assets/art/v6.7/nodes/n04-2023-plate.webp",
+      "detail": "./assets/art/v6.7/nodes/n04-2023-detail.webp",
+      "crop": {
+        "x": 600,
+        "y": 120,
+        "width": 930,
+        "height": 780
+      },
+      "detailCrop": {
+        "x": 790,
+        "y": 310,
+        "width": 560,
+        "height": 380
+      }
+    },
+    {
+      "node": 5,
+      "scene": 0,
+      "key": "2026",
+      "direction": "eleven-event light corridor",
+      "sourceReference": "assets/generated/reference-v6.7/n05-s01-2026-reference.png",
+      "plate": "./assets/art/v6.7/nodes/n05-2026-plate.webp",
+      "detail": "./assets/art/v6.7/nodes/n05-2026-detail.webp",
+      "crop": {
+        "x": 600,
+        "y": 130,
+        "width": 940,
+        "height": 770
+      },
+      "detailCrop": {
+        "x": 840,
+        "y": 310,
+        "width": 560,
+        "height": 380
+      }
+    },
+    {
+      "node": 6,
+      "scene": 1,
+      "key": "2003",
+      "direction": "policy folio",
+      "sourceReference": "assets/generated/reference-v6.7/n06-s02-2003-reference.png",
+      "plate": "./assets/art/v6.7/nodes/n06-2003-plate.webp",
+      "detail": "./assets/art/v6.7/nodes/n06-2003-detail.webp",
+      "crop": {
+        "x": 720,
+        "y": 160,
+        "width": 830,
+        "height": 760
+      },
+      "detailCrop": {
+        "x": 840,
+        "y": 340,
+        "width": 560,
+        "height": 380
+      }
+    },
+    {
+      "node": 7,
+      "scene": 1,
+      "key": "2008",
+      "direction": "index archive drawer",
+      "sourceReference": "assets/generated/reference-v6.7/n07-s02-2008-reference.png",
+      "plate": "./assets/art/v6.7/nodes/n07-2008-plate.webp",
+      "detail": "./assets/art/v6.7/nodes/n07-2008-detail.webp",
+      "crop": {
+        "x": 700,
+        "y": 90,
+        "width": 730,
+        "height": 820
+      },
+      "detailCrop": {
+        "x": 800,
+        "y": 310,
+        "width": 560,
+        "height": 380
+      }
+    },
+    {
+      "node": 8,
+      "scene": 1,
+      "key": "2015",
+      "direction": "regulation accordion",
+      "sourceReference": "assets/generated/reference-v6.7/n08-s02-2015-reference.png",
+      "plate": "./assets/art/v6.7/nodes/n08-2015-plate.webp",
+      "detail": "./assets/art/v6.7/nodes/n08-2015-detail.webp",
+      "crop": {
+        "x": 320,
+        "y": 210,
+        "width": 960,
+        "height": 650
+      },
+      "detailCrop": {
+        "x": 520,
+        "y": 330,
+        "width": 560,
+        "height": 380
+      }
+    },
+    {
+      "node": 9,
+      "scene": 1,
+      "key": "2016",
+      "direction": "education shelf",
+      "sourceReference": "assets/generated/reference-v6.7/n09-s02-2016-reference.png",
+      "plate": "./assets/art/v6.7/nodes/n09-2016-plate.webp",
+      "detail": "./assets/art/v6.7/nodes/n09-2016-detail.webp",
+      "crop": {
+        "x": 570,
+        "y": 100,
+        "width": 960,
+        "height": 820
+      },
+      "detailCrop": {
+        "x": 770,
+        "y": 330,
+        "width": 560,
+        "height": 380
+      }
+    },
+    {
+      "node": 10,
+      "scene": 1,
+      "key": "2019",
+      "direction": "twin occupation tablets",
+      "sourceReference": "assets/generated/reference-v6.7/n10-s02-2019-reference.png",
+      "plate": "./assets/art/v6.7/nodes/n10-2019-plate.webp",
+      "detail": "./assets/art/v6.7/nodes/n10-2019-detail.webp",
+      "crop": {
+        "x": 560,
+        "y": 180,
+        "width": 960,
+        "height": 690
+      },
+      "detailCrop": {
+        "x": 770,
+        "y": 330,
+        "width": 560,
+        "height": 380
+      }
+    },
+    {
+      "node": 11,
+      "scene": 2,
+      "key": "2005",
+      "direction": "first champion triptych",
+      "sourceReference": "assets/generated/reference-v6.7/n11-s03-2005-reference.png",
+      "plate": "./assets/art/v6.7/nodes/n11-2005-plate.webp",
+      "detail": "./assets/art/v6.7/nodes/n11-2005-detail.webp",
+      "crop": {
+        "x": 520,
+        "y": 200,
+        "width": 1030,
+        "height": 650
+      },
+      "detailCrop": {
+        "x": 790,
+        "y": 310,
+        "width": 560,
+        "height": 380
+      }
+    },
+    {
+      "node": 12,
+      "scene": 2,
+      "key": "2006",
+      "direction": "back-to-back echo flags",
+      "sourceReference": "assets/generated/reference-v6.7/n12-s03-2006-reference.png",
+      "plate": "./assets/art/v6.7/nodes/n12-2006-plate.webp",
+      "detail": "./assets/art/v6.7/nodes/n12-2006-detail.webp",
+      "crop": {
+        "x": 420,
+        "y": 310,
+        "width": 1100,
+        "height": 590
+      },
+      "detailCrop": {
+        "x": 800,
+        "y": 370,
+        "width": 560,
+        "height": 380
+      }
+    },
+    {
+      "node": 13,
+      "scene": 2,
+      "key": "2012",
+      "direction": "championship shield reliquary",
+      "sourceReference": "assets/generated/reference-v6.7/n13-s03-2012-reference.png",
+      "plate": "./assets/art/v6.7/nodes/n13-2012-plate.webp",
+      "detail": "./assets/art/v6.7/nodes/n13-2012-detail.webp",
+      "crop": {
+        "x": 650,
+        "y": 120,
+        "width": 880,
+        "height": 820
+      },
+      "detailCrop": {
+        "x": 840,
+        "y": 310,
+        "width": 560,
+        "height": 380
+      }
+    },
+    {
+      "node": 14,
+      "scene": 2,
+      "key": "2014",
+      "direction": "twin-finalist plinth",
+      "sourceReference": "assets/generated/reference-v6.7/n14-s03-2014-reference.png",
+      "plate": "./assets/art/v6.7/nodes/n14-2014-plate.webp",
+      "detail": "./assets/art/v6.7/nodes/n14-2014-detail.webp",
+      "crop": {
+        "x": 0,
+        "y": 260,
+        "width": 1200,
+        "height": 600
+      },
+      "detailCrop": {
+        "x": 240,
+        "y": 370,
+        "width": 560,
+        "height": 380
+      }
+    },
+    {
+      "node": 15,
+      "scene": 2,
+      "key": "2016",
+      "direction": "strategy wing",
+      "sourceReference": "assets/generated/reference-v6.7/n15-s03-2016-reference.png",
+      "plate": "./assets/art/v6.7/nodes/n15-2016-plate.webp",
+      "detail": "./assets/art/v6.7/nodes/n15-2016-detail.webp",
+      "crop": {
+        "x": 850,
+        "y": 50,
+        "width": 690,
+        "height": 850
+      },
+      "detailCrop": {
+        "x": 900,
+        "y": 310,
+        "width": 560,
+        "height": 380
+      }
+    },
+    {
+      "node": 16,
+      "scene": 3,
+      "key": "ig",
+      "direction": "broadcast evidence ribbon",
+      "sourceReference": "assets/generated/reference-v6.7/n16-s04-2018-reference.png",
+      "plate": "./assets/art/v6.7/nodes/n16-ig-plate.webp",
+      "detail": "./assets/art/v6.7/nodes/n16-ig-detail.webp",
+      "crop": {
+        "x": 520,
+        "y": 220,
+        "width": 740,
+        "height": 650
+      },
+      "detailCrop": {
+        "x": 700,
+        "y": 330,
+        "width": 560,
+        "height": 380
+      }
+    },
+    {
+      "node": 17,
+      "scene": 3,
+      "key": "fpx",
+      "direction": "Paris procession arch",
+      "sourceReference": "assets/generated/reference-v6.7/n17-s04-2019-reference.png",
+      "plate": "./assets/art/v6.7/nodes/n17-fpx-plate.webp",
+      "detail": "./assets/art/v6.7/nodes/n17-fpx-detail.webp",
+      "crop": {
+        "x": 300,
+        "y": 160,
+        "width": 1040,
+        "height": 780
+      },
+      "detailCrop": {
+        "x": 520,
+        "y": 330,
+        "width": 560,
+        "height": 380
+      }
+    },
+    {
+      "node": 18,
+      "scene": 3,
+      "key": "edg",
+      "direction": "five-frame comeback",
+      "sourceReference": "assets/generated/reference-v6.7/n18-s04-2021-reference.png",
+      "plate": "./assets/art/v6.7/nodes/n18-edg-plate.webp",
+      "detail": "./assets/art/v6.7/nodes/n18-edg-detail.webp",
+      "crop": {
+        "x": 500,
+        "y": 180,
+        "width": 1040,
+        "height": 660
+      },
+      "detailCrop": {
+        "x": 750,
+        "y": 310,
+        "width": 560,
+        "height": 380
+      }
+    },
+    {
+      "node": 19,
+      "scene": 4,
+      "key": "2018",
+      "direction": "exhibition textile archive",
+      "sourceReference": "assets/generated/reference-v6.7/n19-s05-2018-reference.png",
+      "plate": "./assets/art/v6.7/nodes/n19-2018-plate.webp",
+      "detail": "./assets/art/v6.7/nodes/n19-2018-detail.webp",
+      "crop": {
+        "x": 480,
+        "y": 270,
+        "width": 1080,
+        "height": 650
+      },
+      "detailCrop": {
+        "x": 800,
+        "y": 390,
+        "width": 560,
+        "height": 380
+      }
+    },
+    {
+      "node": 20,
+      "scene": 4,
+      "key": "2023",
+      "direction": "lotus medal constellation",
+      "sourceReference": "assets/generated/reference-v6.7/n20-s05-2023-reference.png",
+      "plate": "./assets/art/v6.7/nodes/n20-2023-plate.webp",
+      "detail": "./assets/art/v6.7/nodes/n20-2023-detail.webp",
+      "crop": {
+        "x": 40,
+        "y": 180,
+        "width": 1030,
+        "height": 720
+      },
+      "detailCrop": {
+        "x": 270,
+        "y": 350,
+        "width": 560,
+        "height": 380
+      }
+    },
+    {
+      "node": 21,
+      "scene": 5,
+      "key": "revenue",
+      "direction": "revenue orbit",
+      "sourceReference": "assets/generated/reference-v6.7/n21-s06-revenue-reference.png",
+      "plate": "./assets/art/v6.7/nodes/n21-revenue-plate.webp",
+      "detail": "./assets/art/v6.7/nodes/n21-revenue-detail.webp",
+      "crop": {
+        "x": 600,
+        "y": 140,
+        "width": 950,
+        "height": 730
+      },
+      "detailCrop": {
+        "x": 770,
+        "y": 330,
+        "width": 560,
+        "height": 380
+      }
+    },
+    {
+      "node": 22,
+      "scene": 5,
+      "key": "users",
+      "direction": "audience constellation",
+      "sourceReference": "assets/generated/reference-v6.7/n22-s06-users-reference.png",
+      "plate": "./assets/art/v6.7/nodes/n22-users-plate.webp",
+      "detail": "./assets/art/v6.7/nodes/n22-users-detail.webp",
+      "crop": {
+        "x": 30,
+        "y": 290,
+        "width": 1050,
+        "height": 630
+      },
+      "detailCrop": {
+        "x": 300,
+        "y": 400,
+        "width": 560,
+        "height": 380
+      }
+    },
+    {
+      "node": 23,
+      "scene": 5,
+      "key": "events",
+      "direction": "event calendar cascade",
+      "sourceReference": "assets/generated/reference-v6.7/n23-s06-events-reference.png",
+      "plate": "./assets/art/v6.7/nodes/n23-events-plate.webp",
+      "detail": "./assets/art/v6.7/nodes/n23-events-detail.webp",
+      "crop": {
+        "x": 720,
+        "y": 130,
+        "width": 810,
+        "height": 740
+      },
+      "detailCrop": {
+        "x": 760,
+        "y": 310,
+        "width": 560,
+        "height": 380
+      }
+    },
+    {
+      "node": 24,
+      "scene": 5,
+      "key": "clubs",
+      "direction": "club constellation",
+      "sourceReference": "assets/generated/reference-v6.7/n24-s06-clubs-reference.png",
+      "plate": "./assets/art/v6.7/nodes/n24-clubs-plate.webp",
+      "detail": "./assets/art/v6.7/nodes/n24-clubs-detail.webp",
+      "crop": {
+        "x": 460,
+        "y": 100,
+        "width": 1080,
+        "height": 820
+      },
+      "detailCrop": {
+        "x": 720,
+        "y": 280,
+        "width": 560,
+        "height": 380
+      }
+    },
+    {
+      "node": 25,
+      "scene": 6,
+      "key": "shanghai",
+      "direction": "cartographic needle",
+      "sourceReference": "assets/generated/reference-v6.7/n25-s07-shanghai-reference.png",
+      "plate": "./assets/art/v6.7/nodes/n25-shanghai-plate.webp",
+      "detail": "./assets/art/v6.7/nodes/n25-shanghai-detail.webp",
+      "crop": {
+        "x": 480,
+        "y": 200,
+        "width": 1020,
+        "height": 700
+      },
+      "detailCrop": {
+        "x": 770,
+        "y": 330,
+        "width": 560,
+        "height": 380
+      }
+    },
+    {
+      "node": 26,
+      "scene": 6,
+      "key": "chengdu",
+      "direction": "basin lattice",
+      "sourceReference": "assets/generated/reference-v6.7/n26-s07-chengdu-reference.png",
+      "plate": "./assets/art/v6.7/nodes/n26-chengdu-plate.webp",
+      "detail": "./assets/art/v6.7/nodes/n26-chengdu-detail.webp",
+      "crop": {
+        "x": 0,
+        "y": 620,
+        "width": 750,
+        "height": 930
+      },
+      "detailCrop": {
+        "x": 100,
+        "y": 910,
+        "width": 560,
+        "height": 380
+      }
+    },
+    {
+      "node": 27,
+      "scene": 6,
+      "key": "chongqing",
+      "direction": "vertical terrain",
+      "sourceReference": "assets/generated/reference-v6.7/n27-s07-chongqing-reference.png",
+      "plate": "./assets/art/v6.7/nodes/n27-chongqing-plate.webp",
+      "detail": "./assets/art/v6.7/nodes/n27-chongqing-detail.webp",
+      "crop": {
+        "x": 340,
+        "y": 90,
+        "width": 700,
+        "height": 850
+      },
+      "detailCrop": {
+        "x": 370,
+        "y": 310,
+        "width": 560,
+        "height": 380
+      }
+    },
+    {
+      "node": 28,
+      "scene": 6,
+      "key": "hangzhou",
+      "direction": "display arena cutaway",
+      "sourceReference": "assets/generated/reference-v6.7/n28-s07-hangzhou-reference.png",
+      "plate": "./assets/art/v6.7/nodes/n28-hangzhou-plate.webp",
+      "detail": "./assets/art/v6.7/nodes/n28-hangzhou-detail.webp",
+      "crop": {
+        "x": 600,
+        "y": 120,
+        "width": 930,
+        "height": 760
+      },
+      "detailCrop": {
+        "x": 770,
+        "y": 350,
+        "width": 560,
+        "height": 380
+      }
+    },
+    {
+      "node": 29,
+      "scene": 7,
+      "key": "training",
+      "direction": "tactical rehearsal table",
+      "sourceReference": "assets/generated/reference-v6.7/n29-s08-training-reference.png",
+      "plate": "./assets/art/v6.7/nodes/n29-training-plate.webp",
+      "detail": "./assets/art/v6.7/nodes/n29-training-detail.webp",
+      "crop": {
+        "x": 0,
+        "y": 230,
+        "width": 1200,
+        "height": 700
+      },
+      "detailCrop": {
+        "x": 340,
+        "y": 410,
+        "width": 560,
+        "height": 380
+      }
+    },
+    {
+      "node": 30,
+      "scene": 7,
+      "key": "data",
+      "direction": "analytic lens",
+      "sourceReference": "assets/generated/reference-v6.7/n30-s08-data-reference.png",
+      "plate": "./assets/art/v6.7/nodes/n30-data-plate.webp",
+      "detail": "./assets/art/v6.7/nodes/n30-data-detail.webp",
+      "crop": {
+        "x": 520,
+        "y": 150,
+        "width": 1030,
+        "height": 750
+      },
+      "detailCrop": {
+        "x": 770,
+        "y": 310,
+        "width": 560,
+        "height": 380
+      }
+    },
+    {
+      "node": 31,
+      "scene": 7,
+      "key": "broadcast",
+      "direction": "signal orchestra",
+      "sourceReference": "assets/generated/reference-v6.7/n31-s08-broadcast-reference.png",
+      "plate": "./assets/art/v6.7/nodes/n31-broadcast-plate.webp",
+      "detail": "./assets/art/v6.7/nodes/n31-broadcast-detail.webp",
+      "crop": {
+        "x": 520,
+        "y": 140,
+        "width": 1030,
+        "height": 780
+      },
+      "detailCrop": {
+        "x": 820,
+        "y": 340,
+        "width": 560,
+        "height": 380
+      }
+    },
+    {
+      "node": 32,
+      "scene": 7,
+      "key": "operation",
+      "direction": "operations route",
+      "sourceReference": "assets/generated/reference-v6.7/n32-s08-operations-reference.png",
+      "plate": "./assets/art/v6.7/nodes/n32-operation-plate.webp",
+      "detail": "./assets/art/v6.7/nodes/n32-operation-detail.webp",
+      "crop": {
+        "x": 20,
+        "y": 230,
+        "width": 1200,
+        "height": 680
+      },
+      "detailCrop": {
+        "x": 410,
+        "y": 370,
+        "width": 560,
+        "height": 380
+      }
+    },
+    {
+      "node": 33,
+      "scene": 8,
+      "key": "audience",
+      "direction": "orbital audience field",
+      "sourceReference": "assets/generated/reference-v6.7/n33-s09-audience-reference.png",
+      "plate": "./assets/art/v6.7/nodes/n33-audience-plate.webp",
+      "detail": "./assets/art/v6.7/nodes/n33-audience-detail.webp",
+      "crop": {
+        "x": 0,
+        "y": 180,
+        "width": 1040,
+        "height": 660
+      },
+      "detailCrop": {
+        "x": 220,
+        "y": 310,
+        "width": 560,
+        "height": 380
+      }
+    },
+    {
+      "node": 34,
+      "scene": 8,
+      "key": "peak",
+      "direction": "concurrent wave crest",
+      "sourceReference": "assets/generated/reference-v6.7/n34-s09-peak-reference.png",
+      "plate": "./assets/art/v6.7/nodes/n34-peak-plate.webp",
+      "detail": "./assets/art/v6.7/nodes/n34-peak-detail.webp",
+      "crop": {
+        "x": 450,
+        "y": 200,
+        "width": 1100,
+        "height": 600
+      },
+      "detailCrop": {
+        "x": 620,
+        "y": 330,
+        "width": 560,
+        "height": 380
+      }
+    },
+    {
+      "node": 35,
+      "scene": 8,
+      "key": "mobile",
+      "direction": "handheld dark prism",
+      "sourceReference": "assets/generated/reference-v6.7/n35-s09-mobile-reference.png",
+      "plate": "./assets/art/v6.7/nodes/n35-mobile-plate.webp",
+      "detail": "./assets/art/v6.7/nodes/n35-mobile-detail.webp",
+      "crop": {
+        "x": 430,
+        "y": 100,
+        "width": 1130,
+        "height": 800
+      },
+      "detailCrop": {
+        "x": 820,
+        "y": 310,
+        "width": 560,
+        "height": 380
+      }
+    },
+    {
+      "node": 36,
+      "scene": 8,
+      "key": "genre",
+      "direction": "genre field triptych",
+      "sourceReference": "assets/generated/reference-v6.7/n36-s09-genre-reference.png",
+      "plate": "./assets/art/v6.7/nodes/n36-genre-plate.webp",
+      "detail": "./assets/art/v6.7/nodes/n36-genre-detail.webp",
+      "crop": {
+        "x": 40,
+        "y": 140,
+        "width": 1110,
+        "height": 570
+      },
+      "detailCrop": {
+        "x": 300,
+        "y": 240,
+        "width": 560,
+        "height": 380
+      }
+    },
+    {
+      "node": 37,
+      "scene": 9,
+      "key": "content",
+      "direction": "story ribbon archive",
+      "sourceReference": "assets/generated/reference-v6.7/n37-s10-content-reference.png",
+      "plate": "./assets/art/v6.7/nodes/n37-content-plate.webp",
+      "detail": "./assets/art/v6.7/nodes/n37-content-detail.webp",
+      "crop": {
+        "x": 500,
+        "y": 140,
+        "width": 1060,
+        "height": 780
+      },
+      "detailCrop": {
+        "x": 820,
+        "y": 350,
+        "width": 560,
+        "height": 380
+      }
+    },
+    {
+      "node": 38,
+      "scene": 9,
+      "key": "city",
+      "direction": "civic event thread",
+      "sourceReference": "assets/generated/reference-v6.7/n38-s10-city-reference.png",
+      "plate": "./assets/art/v6.7/nodes/n38-city-plate.webp",
+      "detail": "./assets/art/v6.7/nodes/n38-city-detail.webp",
+      "crop": {
+        "x": 20,
+        "y": 180,
+        "width": 980,
+        "height": 650
+      },
+      "detailCrop": {
+        "x": 320,
+        "y": 310,
+        "width": 560,
+        "height": 380
+      }
+    },
+    {
+      "node": 39,
+      "scene": 9,
+      "key": "technology",
+      "direction": "human-scale technical lens",
+      "sourceReference": "assets/generated/reference-v6.7/n39-s10-technology-reference.png",
+      "plate": "./assets/art/v6.7/nodes/n39-technology-plate.webp",
+      "detail": "./assets/art/v6.7/nodes/n39-technology-detail.webp",
+      "crop": {
+        "x": 600,
+        "y": 180,
+        "width": 960,
+        "height": 720
+      },
+      "detailCrop": {
+        "x": 800,
+        "y": 310,
+        "width": 560,
+        "height": 380
+      }
+    },
+    {
+      "node": 40,
+      "scene": 9,
+      "key": "talent",
+      "direction": "career corridor",
+      "sourceReference": "assets/generated/reference-v6.7/n40-s10-talent-reference.png",
+      "plate": "./assets/art/v6.7/nodes/n40-talent-plate.webp",
+      "detail": "./assets/art/v6.7/nodes/n40-talent-detail.webp",
+      "crop": {
+        "x": 500,
+        "y": 140,
+        "width": 1060,
+        "height": 760
+      },
+      "detailCrop": {
+        "x": 840,
+        "y": 320,
+        "width": 560,
+        "height": 380
+      }
+    }
+  ]
+}

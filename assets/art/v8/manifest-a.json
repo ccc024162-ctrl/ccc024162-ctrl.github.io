@@ -1,0 +1,445 @@
+{
+  "version": "v8.0-art-a",
+  "generatedAt": "2026-07-17T14:39:48+00:00",
+  "generator": "agent-gw generate_image (image_generation plugin)",
+  "designTokens": {
+    "background": "#0B0B0B",
+    "gold": "#C9A96A",
+    "lightDirection": "upper-left",
+    "negativeSpace": "subject centered-right, wide dark margins for camera push-in"
+  },
+  "budgets": {
+    "desktopBytes": 358400,
+    "mobileBytes": 153600,
+    "quality": "webp q80 (auto-step-down)"
+  },
+  "assets": [
+    {
+      "key": "act01",
+      "act": 1,
+      "kind": "macro",
+      "subject": "序章·身份 —— 奖杯剪影与光圈",
+      "prompt": "A lone esports championship trophy standing in darkness, sculpted from black obsidian glass, encircled by one thin luminous golden halo ring floating behind it, fine glowing kintsugi gold seams tracing the trophy silhouette, subtle golden mist at its base, deep obsidian black background, exact color RGB(11,11,11), warm kintsugi gold accents RGB(201,169,106), single soft light source from the upper left, cinematic chiaroscuro, museum-grade restraint, precise and quiet, main subject centered slightly to the right, vast dark negative space on all sides for camera push-in, absolutely no text, no letters, no watermark, no logo, no signature",
+      "ratio": "16:9",
+      "genResolution": "2K",
+      "rawSize": [
+        2048,
+        1152
+      ],
+      "rawStaging": "tools/.staging-v8a/act01-trophy-macro-raw.png",
+      "outputs": {
+        "desktop": {
+          "file": "act01-trophy-macro-1920.webp",
+          "width": 1920,
+          "height": 1080,
+          "bytes": 44794,
+          "quality": 80,
+          "budget": 358400
+        },
+        "mobile": {
+          "file": "act01-trophy-macro-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 15870,
+          "quality": 80,
+          "budget": 153600
+        }
+      },
+      "post": {
+        "watermark": {
+          "region": [
+            0,
+            1060,
+            307,
+            1152
+          ],
+          "detected": true,
+          "boxRatio": 0.03629,
+          "refRatio": 0.0,
+          "boxNeutral": 0.02815,
+          "refNeutral": 0.0,
+          "fix": "patch-above",
+          "afterFixRatio": 0.0
+        },
+        "blackPoint": {
+          "cornerBefore": 2.0,
+          "applied": true,
+          "cornerAfter": 11.0,
+          "direction": "lift",
+          "method": "luma-keyed curve + spatial vignette gate"
+        },
+        "ops": [
+          "watermark-inpaint:patch-above",
+          "black-point-normalize",
+          "export-webp-1920+960"
+        ]
+      }
+    },
+    {
+      "key": "act02",
+      "act": 2,
+      "kind": "macro",
+      "subject": "制度档案 —— 档案抽屉矩阵纵深",
+      "prompt": "An endless matrix of dark archival document drawers receding into deep one-point perspective, black lacquer and obsidian surfaces, hairline kintsugi gold seams glowing along the drawer edges, two or three drawers slightly open spilling warm gold light, shallow cinematic depth of field, foreground dissolves into pure black, deep obsidian black background, exact color RGB(11,11,11), warm kintsugi gold accents RGB(201,169,106), single soft light source from the upper left, cinematic chiaroscuro, museum-grade restraint, precise and quiet, main subject centered slightly to the right, vast dark negative space on all sides for camera push-in, absolutely no text, no letters, no watermark, no logo, no signature",
+      "ratio": "16:9",
+      "genResolution": "2K",
+      "rawSize": [
+        2048,
+        1152
+      ],
+      "rawStaging": "tools/.staging-v8a/act02-archive-matrix-raw.png",
+      "outputs": {
+        "desktop": {
+          "file": "act02-archive-matrix-1920.webp",
+          "width": 1920,
+          "height": 1080,
+          "bytes": 49800,
+          "quality": 80,
+          "budget": 358400
+        },
+        "mobile": {
+          "file": "act02-archive-matrix-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 19562,
+          "quality": 80,
+          "budget": 153600
+        }
+      },
+      "post": {
+        "watermark": {
+          "region": [
+            0,
+            1060,
+            307,
+            1152
+          ],
+          "detected": true,
+          "boxRatio": 0.03661,
+          "refRatio": 0.0,
+          "boxNeutral": 0.02854,
+          "refNeutral": 0.0,
+          "fix": "patch-above",
+          "afterFixRatio": 0.0
+        },
+        "blackPoint": {
+          "cornerBefore": 4.07,
+          "applied": true,
+          "cornerAfter": 10.21,
+          "direction": "lift",
+          "method": "luma-keyed curve + spatial vignette gate"
+        },
+        "ops": [
+          "watermark-inpaint:patch-above",
+          "black-point-normalize",
+          "export-webp-1920+960"
+        ]
+      }
+    },
+    {
+      "key": "act03",
+      "act": 3,
+      "kind": "macro",
+      "subject": "早期冠军 —— 月桂与旗帜织物",
+      "prompt": "A length of dark black silk flag fabric suspended mid-air in slow motion, its woven golden laurel wreath motif catching warm light, kintsugi gold thread seams running along the fabric folds, soft fabric waves frozen in darkness, floating gold dust, deep obsidian black background, exact color RGB(11,11,11), warm kintsugi gold accents RGB(201,169,106), single soft light source from the upper left, cinematic chiaroscuro, museum-grade restraint, precise and quiet, main subject centered slightly to the right, vast dark negative space on all sides for camera push-in, absolutely no text, no letters, no watermark, no logo, no signature",
+      "ratio": "16:9",
+      "genResolution": "2K",
+      "rawSize": [
+        2048,
+        1152
+      ],
+      "rawStaging": "tools/.staging-v8a/act03-laurel-flag-raw.png",
+      "outputs": {
+        "desktop": {
+          "file": "act03-laurel-flag-1920.webp",
+          "width": 1920,
+          "height": 1080,
+          "bytes": 60364,
+          "quality": 80,
+          "budget": 358400
+        },
+        "mobile": {
+          "file": "act03-laurel-flag-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 20984,
+          "quality": 80,
+          "budget": 153600
+        }
+      },
+      "post": {
+        "watermark": {
+          "region": [
+            0,
+            1060,
+            307,
+            1152
+          ],
+          "detected": true,
+          "boxRatio": 0.03675,
+          "refRatio": 0.0,
+          "boxNeutral": 0.02868,
+          "refNeutral": 0.0,
+          "fix": "patch-above",
+          "afterFixRatio": 0.0
+        },
+        "blackPoint": {
+          "cornerBefore": 5.93,
+          "applied": true,
+          "cornerAfter": 10.93,
+          "direction": "lift",
+          "method": "luma-keyed curve + spatial vignette gate"
+        },
+        "ops": [
+          "watermark-inpaint:patch-above",
+          "black-point-normalize",
+          "export-webp-1920+960"
+        ]
+      }
+    },
+    {
+      "key": "act04",
+      "act": 4,
+      "kind": "macro",
+      "subject": "联赛记忆 —— 银幕光束与胶片",
+      "prompt": "A single volumetric projector light beam cutting diagonally from the upper left through pure darkness onto a gently curling floating strip of analog film, film frames glowing faint warm gold without any readable content, fine dust particles drifting inside the beam, deep cinematic blacks, deep obsidian black background, exact color RGB(11,11,11), warm kintsugi gold accents RGB(201,169,106), single soft light source from the upper left, cinematic chiaroscuro, museum-grade restraint, precise and quiet, main subject centered slightly to the right, vast dark negative space on all sides for camera push-in, absolutely no text, no letters, no watermark, no logo, no signature",
+      "ratio": "16:9",
+      "genResolution": "2K",
+      "rawSize": [
+        2048,
+        1152
+      ],
+      "rawStaging": "tools/.staging-v8a/act04-cinema-beam-raw.png",
+      "outputs": {
+        "desktop": {
+          "file": "act04-cinema-beam-1920.webp",
+          "width": 1920,
+          "height": 1080,
+          "bytes": 27258,
+          "quality": 80,
+          "budget": 358400
+        },
+        "mobile": {
+          "file": "act04-cinema-beam-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 9884,
+          "quality": 80,
+          "budget": 153600
+        }
+      },
+      "post": {
+        "watermark": {
+          "region": [
+            0,
+            1060,
+            307,
+            1152
+          ],
+          "detected": true,
+          "boxRatio": 0.03693,
+          "refRatio": 0.0,
+          "boxNeutral": 0.02875,
+          "refNeutral": 0.0,
+          "fix": "patch-above",
+          "afterFixRatio": 0.0
+        },
+        "blackPoint": {
+          "cornerBefore": 7.07,
+          "applied": true,
+          "cornerAfter": 10.07,
+          "direction": "lift",
+          "method": "luma-keyed curve + spatial vignette gate"
+        },
+        "ops": [
+          "watermark-inpaint:patch-above",
+          "black-point-normalize",
+          "export-webp-1920+960"
+        ]
+      }
+    },
+    {
+      "key": "act05",
+      "act": 5,
+      "kind": "macro",
+      "subject": "亚运 —— 莲形奖牌星座",
+      "prompt": "A sparse constellation of lotus-petal shaped medals suspended in dark space like a star map, connected by hairline glowing kintsugi gold threads, each medal edged with warm gold rim light, a few tiny gold particles orbiting, profound stillness, deep obsidian black background, exact color RGB(11,11,11), warm kintsugi gold accents RGB(201,169,106), single soft light source from the upper left, cinematic chiaroscuro, museum-grade restraint, precise and quiet, main subject centered slightly to the right, vast dark negative space on all sides for camera push-in, absolutely no text, no letters, no watermark, no logo, no signature",
+      "ratio": "16:9",
+      "genResolution": "2K",
+      "rawSize": [
+        2048,
+        1152
+      ],
+      "rawStaging": "tools/.staging-v8a/act05-lotus-medal-raw.png",
+      "outputs": {
+        "desktop": {
+          "file": "act05-lotus-medal-1920.webp",
+          "width": 1920,
+          "height": 1080,
+          "bytes": 34996,
+          "quality": 80,
+          "budget": 358400
+        },
+        "mobile": {
+          "file": "act05-lotus-medal-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 11904,
+          "quality": 80,
+          "budget": 153600
+        }
+      },
+      "post": {
+        "watermark": {
+          "region": [
+            0,
+            1060,
+            307,
+            1152
+          ],
+          "detected": true,
+          "boxRatio": 0.03664,
+          "refRatio": 0.0,
+          "boxNeutral": 0.02861,
+          "refNeutral": 0.0,
+          "fix": "patch-above",
+          "afterFixRatio": 0.0
+        },
+        "blackPoint": {
+          "cornerBefore": 4.25,
+          "applied": true,
+          "cornerAfter": 10.25,
+          "direction": "lift",
+          "method": "luma-keyed curve + spatial vignette gate"
+        },
+        "ops": [
+          "watermark-inpaint:patch-above",
+          "black-point-normalize",
+          "export-webp-1920+960"
+        ]
+      }
+    },
+    {
+      "key": "tex-obsidian",
+      "act": null,
+      "kind": "texture",
+      "subject": "材质 —— 黑曜石金缮纹理",
+      "prompt": "Seamless full-frame macro texture of polished black obsidian stone repaired with kintsugi, fine glowing warm gold veins and cracks crossing the deep black glass surface, soft sheen from the upper left, dark cinematic mood, uniform edge-to-edge texture, no focal object, absolutely no text, no watermark, no logo",
+      "ratio": "1:1",
+      "genResolution": "2K",
+      "rawSize": [
+        2048,
+        2048
+      ],
+      "rawStaging": "tools/.staging-v8a/tex-obsidian-kintsugi-raw.png",
+      "outputs": {
+        "desktop": {
+          "file": "tex-obsidian-kintsugi-1920.webp",
+          "width": 1920,
+          "height": 1920,
+          "bytes": 353610,
+          "quality": 80,
+          "budget": 358400
+        },
+        "mobile": {
+          "file": "tex-obsidian-kintsugi-960.webp",
+          "width": 960,
+          "height": 960,
+          "bytes": 115142,
+          "quality": 80,
+          "budget": 153600
+        }
+      },
+      "post": {
+        "watermark": {
+          "region": [
+            0,
+            1885,
+            307,
+            2048
+          ],
+          "detected": true,
+          "boxRatio": 0.15331,
+          "refRatio": 0.0725,
+          "boxNeutral": 0.06075,
+          "refNeutral": 0.00584,
+          "fix": "patch-right",
+          "afterFixRatio": 0.02232
+        },
+        "blackPoint": {
+          "cornerBefore": 8.07,
+          "applied": true,
+          "cornerAfter": 10.07,
+          "direction": "lift",
+          "method": "luma-keyed curve + spatial vignette gate"
+        },
+        "ops": [
+          "watermark-inpaint:patch-right",
+          "black-point-normalize",
+          "export-webp-1920+960"
+        ]
+      }
+    },
+    {
+      "key": "tex-lacquer",
+      "act": null,
+      "kind": "texture",
+      "subject": "材质 —— 黑漆器肌理",
+      "prompt": "Seamless full-frame macro texture of traditional black urushi lacquerware surface, subtle hand-brushed grain, faint warm gold dust settled into the fine grooves, soft sheen from the upper left, deep black with quiet depth, uniform edge-to-edge texture, no focal object, absolutely no text, no watermark, no logo",
+      "ratio": "1:1",
+      "genResolution": "2K",
+      "rawSize": [
+        2048,
+        2048
+      ],
+      "rawStaging": "tools/.staging-v8a/tex-black-lacquer-raw.png",
+      "outputs": {
+        "desktop": {
+          "file": "tex-black-lacquer-1920.webp",
+          "width": 1920,
+          "height": 1920,
+          "bytes": 348310,
+          "quality": 60,
+          "budget": 358400
+        },
+        "mobile": {
+          "file": "tex-black-lacquer-960.webp",
+          "width": 960,
+          "height": 960,
+          "bytes": 149954,
+          "quality": 80,
+          "budget": 153600
+        }
+      },
+      "post": {
+        "watermark": {
+          "region": [
+            0,
+            1885,
+            307,
+            2048
+          ],
+          "detected": true,
+          "boxRatio": 0.08387,
+          "refRatio": 0.03048,
+          "boxNeutral": 0.05426,
+          "refNeutral": 0.0015,
+          "fix": "patch-right",
+          "afterFixRatio": 0.0204
+        },
+        "blackPoint": {
+          "cornerBefore": 13.93,
+          "applied": true,
+          "cornerAfter": 10.93,
+          "direction": "crush",
+          "method": "luma-keyed curve + spatial vignette gate"
+        },
+        "ops": [
+          "watermark-inpaint:patch-right",
+          "black-point-normalize",
+          "export-webp-1920+960"
+        ]
+      }
+    }
+  ]
+}
