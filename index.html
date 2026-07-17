@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="zh-CN" data-build-version="8.0.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="中国电竞二十余年：从制度身份、世界冠军到亚运与全球产业" />
+    <meta name="theme-color" content="#0B0B0B" />
+    <meta name="build-version" content="8.0.0" />
+    <meta name="build-id" content="2026-07-17-v8.0-gilt-archive-cinematic" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="preload" href="./assets/fonts/boot-cormorant-500.woff2" as="font" type="font/woff2" crossorigin />
+    <title>中国电竞二十余年 · 40 节点黑金互动档案</title>
+    <script type="module" crossorigin src="./assets/index-Byvaemnz.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/gsap-iLFxgJE2.js">
+    <link rel="modulepreload" crossorigin href="./assets/three-RRyf2gfj.js">
+    <link rel="stylesheet" crossorigin href="./assets/style-CEe0q4yD.css">
+  </head>
+  <body class="is-loading">
+    <!-- 金缮裂缝 SVG：三组 symbol，实例分布于各幕边缘留白处，切换时以 dashoffset 生长。 -->
+    <svg class="svg-defs" width="0" height="0" aria-hidden="true" focusable="false">
+      <defs>
+        <symbol id="kintsugi-a" viewBox="0 0 160 300">
+          <path fill="none" pathLength="100" d="M78 0 L70 38 L86 76 L64 118 L84 162 L68 210 L80 252 L74 300" />
+          <path fill="none" pathLength="100" d="M70 38 L40 52 M86 76 L118 64 M64 118 L34 136 M84 162 L120 148 M68 210 L36 226" />
+          <rect x="-7" y="-1.5" width="14" height="3" transform="translate(66 55) rotate(-14)" fill="#8C6A3F" stroke="none" />
+          <rect x="-7" y="-1.5" width="14" height="3" transform="translate(79 100) rotate(12)" fill="#8C6A3F" stroke="none" />
+          <rect x="-7" y="-1.5" width="14" height="3" transform="translate(71 190) rotate(-8)" fill="#8C6A3F" stroke="none" />
+        </symbol>
+        <symbol id="kintsugi-b" viewBox="0 0 300 160">
+          <path fill="none" pathLength="100" d="M0 80 L42 70 L84 88 L128 66 L172 84 L214 72 L300 82" />
+          <path fill="none" pathLength="100" d="M42 70 L56 38 M84 88 L70 120 M128 66 L146 34 M172 84 L156 118 M214 72 L232 44" />
+          <rect x="-7" y="-1.5" width="14" height="3" transform="translate(58 74) rotate(80)" fill="#8C6A3F" stroke="none" />
+          <rect x="-7" y="-1.5" width="14" height="3" transform="translate(105 78) rotate(96)" fill="#8C6A3F" stroke="none" />
+          <rect x="-7" y="-1.5" width="14" height="3" transform="translate(190 80) rotate(84)" fill="#8C6A3F" stroke="none" />
+        </symbol>
+        <symbol id="kintsugi-c" viewBox="0 0 200 220">
+          <path fill="none" pathLength="100" d="M10 0 L34 40 L22 82 L52 118 L40 160 L66 220" />
+          <path fill="none" pathLength="100" d="M34 40 L66 30 M22 82 L2 96 M52 118 L86 106 M40 160 L76 176" />
+          <rect x="-7" y="-1.5" width="14" height="3" transform="translate(28 60) rotate(-52)" fill="#8C6A3F" stroke="none" />
+          <rect x="-7" y="-1.5" width="14" height="3" transform="translate(36 140) rotate(-70)" fill="#8C6A3F" stroke="none" />
+        </symbol>
+      </defs>
+    </svg>
+
+    <!-- Loader：金缮印章描线 → 计数 → 揭幕。数字字体由 main.ts 显式加载，避免首帧字形跳变。 -->
+    <div class="boot" id="boot" aria-label="页面载入中">
+      <canvas class="boot__fluid" id="bootFluid" aria-hidden="true"></canvas>
+      <div class="boot__seal" aria-hidden="true">
+        <svg class="boot__seal-svg" viewBox="0 0 120 120">
+          <rect class="boot__seal-frame" x="8" y="8" width="104" height="104" pathLength="100" />
+          <rect class="boot__seal-inner" x="18" y="18" width="84" height="84" pathLength="100" />
+          <g class="boot__seal-glyph">
+            <path pathLength="100" d="M60 28 L60 36" />
+            <path pathLength="100" d="M38 44 L82 44" />
+            <path pathLength="100" d="M44 54 L76 54" />
+            <path pathLength="100" d="M60 28 L60 62" />
+            <path pathLength="100" d="M46 64 L74 64 L74 78 L46 78 Z" />
+            <path pathLength="100" d="M50 78 C 48 88, 44 94, 38 98" />
+            <path pathLength="100" d="M70 78 C 72 88, 76 94, 82 98" />
+          </g>
+        </svg>
+      </div>
+      <div class="boot__readout"><span id="bootCount">000</span></div>
+      <div class="boot__track"><i id="bootBar"></i></div>
+      <p class="boot__caption"><span class="boot__caption-en">GILT ARCHIVE · TEN ACTS</span><span class="boot__caption-zh">中国电竞二十余年</span></p>
+    </div>
+
+    <!-- 光标：6px 金点 + 28px 金环（阻尼跟随）；系统原生光标保留。 -->
+    <div class="pointer-glow" id="pointerGlow" aria-hidden="true"><b class="pointer-glow__dot"></b><i class="pointer-glow__ring"></i></div>
+    <div class="grain" aria-hidden="true"></div>
+
+    <header class="topbar" id="topbar">
+      <button class="brand magnetic" type="button" data-go="0" aria-label="回到序章">
+        <span class="brand__mark">20+</span>
+        <span class="brand__copy"><b>中国电竞二十余年</b><small>CN ESPORTS ARCHIVE</small></span>
+      </button>
+      <div class="topbar__center" aria-live="polite"><span id="activeAct">ACT 01</span><i></i><span id="activeName">身份迁移</span></div>
+      <div class="topbar__actions">
+        <button class="sources-toggle magnetic" type="button" data-open-sources><span>资料</span><i>↗</i></button>
+        <button class="motion-toggle magnetic" id="motionToggle" type="button" aria-pressed="false"><span>动态</span><i></i></button>
+        <button class="menu-toggle magnetic" id="menuToggle" type="button" aria-expanded="false" aria-controls="menuPanel"><span>目录</span><i></i></button>
+      </div>
+    </header>
+
+    <!-- 左侧 rail：1px 竖直金线 + 40 刻度；当前节点金色圆弧进度环 + 编目号。刻度由 main.ts 依 SCENE_NODE_KEYS 生成。 -->
+    <aside class="rail" aria-label="节点进度">
+      <div class="rail__catalog" aria-hidden="true"><b id="railCatalog">01</b><span>/ 40</span></div>
+      <div class="rail__body">
+        <div class="rail__line"><i id="railProgress"></i></div>
+        <div class="rail__ticks" id="railTicks"></div>
+        <svg class="rail__ring" id="railRing" viewBox="0 0 36 36" aria-hidden="true">
+          <circle class="rail__ring-track" cx="18" cy="18" r="15.5" />
+          <circle class="rail__ring-arc" id="railRingArc" cx="18" cy="18" r="15.5" />
+        </svg>
+      </div>
+    </aside>
+
+    <nav class="menu" id="menuPanel" aria-label="章节目录" aria-hidden="true">
+      <div class="menu__backdrop" data-close-menu></div>
+      <div class="menu__panel">
+        <p class="menu__eyebrow"><span>TEN ACTS</span><span>2003—2026</span></p>
+        <div class="menu__links">
+          <button type="button" data-go="0"><span>01</span><b>身份迁移</b><small>PROLOGUE</small><i>↗</i></button>
+          <button type="button" data-go="1"><span>02</span><b>制度坐标</b><small>RECOGNITION</small><i>↗</i></button>
+          <button type="button" data-go="2"><span>03</span><b>第一面旗</b><small>EARLY CHAMPIONS</small><i>↗</i></button>
+          <button type="button" data-go="3"><span>04</span><b>联赛记忆</b><small>PUBLIC MEMORY</small><i>↗</i></button>
+          <button type="button" data-go="4"><span>05</span><b>国家队服</b><small>ASIAN GAMES</small><i>↗</i></button>
+          <button type="button" data-go="5"><span>06</span><b>产业结构</b><small>THE ECONOMY</small><i>↗</i></button>
+          <button type="button" data-go="6"><span>07</span><b>赛事城市</b><small>OFFLINE GEOGRAPHY</small><i>↗</i></button>
+          <button type="button" data-go="7"><span>08</span><b>职业链条</b><small>BEYOND PLAYERS</small><i>↗</i></button>
+          <button type="button" data-go="8"><span>09</span><b>全球回响</b><small>GLOBAL REACH</small><i>↗</i></button>
+          <button type="button" data-go="9"><span>10</span><b>下一场</b><small>2026 &amp; BEYOND</small><i>↗</i></button>
+        </div>
+        <div class="menu__footer"><p>40 个精确节点 · 0.5 秒自动展开 · 连续滚动无跨页上限</p><button type="button" data-open-sources>查看资料来源 ↗</button></div>
+      </div>
+    </nav>
+
+    <!-- 资料抽屉：页面事实均可追溯，不将长脚注塞入每一幕。 -->
+    <aside class="sources" id="sourcePanel" aria-hidden="true" aria-label="资料来源">
+      <div class="sources__backdrop" data-close-sources></div>
+      <div class="sources__panel">
+        <div class="sources__head"><div><small>RESEARCH / UPDATED 2026</small><h2>资料来源</h2></div><button type="button" data-close-sources aria-label="关闭资料来源">×</button></div>
+        <p class="sources__intro">数据口径以来源原文为准。产业收入不含电竞游戏产品本身收入；赛事统计为省级及以上、含职业选手的非表演类赛事。</p>
+        <ol class="sources__list">
+          <li><span>01</span><div><b>《2025年中国电子竞技产业报告》</b><p>收入、用户、赛事、城市、俱乐部、产品与出海数据。</p><a href="https://www.xinhuanet.com/publish/20251205/68707d6db5e44f44ab1edcbe2f9f0f20/c.html" target="_blank" rel="noreferrer">新华网 ↗</a></div></li>
+          <li><span>02</span><div><b>电子竞技员就业景气现状分析</b><p>2003—2019 政策节点、职业与教育资料。</p><a href="https://rst.hubei.gov.cn/zfxxgk/fdzdgknr/tjxx/2019/202008/t20200810_2776449.shtml" target="_blank" rel="noreferrer">人社系统 ↗</a></div></li>
+          <li><span>03</span><div><b>2016 年高职专业目录增补</b><p>“电子竞技运动与管理”正式进入专业目录。</p><a href="https://www.moe.gov.cn/srcsite/A07/s7055/201609/t20160906_277892.html" target="_blank" rel="noreferrer">教育部 ↗</a></div></li>
+          <li><span>04</span><div><b>中国电竞世界冠军回顾</b><p>TI2 与 2018 英雄联盟全球总决赛等冠军节点。</p><a href="https://www.chinanews.com.cn/ty/2023/02-13/9952666.shtml" target="_blank" rel="noreferrer">中新网 ↗</a></div></li>
+          <li><span>05</span><div><b>2018 雅加达亚运会资料</b><p>中国代表队在电竞表演项目获得 2 金 1 银。</p><a href="https://www.stdaily.com/web/gdxw/2023-09/07/content_1934911.html" target="_blank" rel="noreferrer">科技日报 ↗</a></div></li>
+          <li><span>06</span><div><b>杭州亚运会电竞收官</b><p>中国队在正式比赛项目中获得 4 金 1 铜。</p><a href="https://www.xinhuanet.com/2023-10/03/c_1129897649.htm" target="_blank" rel="noreferrer">新华社 ↗</a></div></li>
+          <li><span>07</span><div><b>中国杭州电竞中心</b><p>约 5000 座、15 面显示屏与专业场馆信息。</p><a href="https://www.news.cn/2023-05/30/c_1129656769.htm" target="_blank" rel="noreferrer">新华网 ↗</a></div></li>
+          <li><span>08</span><div><b>2026 亚运会电竞 11 个小项</b><p>爱知·名古屋亚运会项目扩容信息。</p><a href="https://www.news.cn/sports/20250224/eed76d1a23d144bf8e4b86192e9cbd29/c.html" target="_blank" rel="noreferrer">新华社 ↗</a></div></li>
+          <li><span>09</span><div><b>2026 中国电竞队名单</b><p>23 名运动员参加 4 个电竞小项。</p><a href="https://app.xinhuanet.com/news/article.html?articleId=202606122c7746b2c63240b6992b02f5ba937c56" target="_blank" rel="noreferrer">新华社 ↗</a></div></li>
+        </ol>
+      </div>
+    </aside>
+
+    <main class="experience" id="experience">
+      <div class="stage" id="stage">
+        <canvas class="webgl" id="webgl" aria-hidden="true"></canvas>
+        <div class="stage__vignette" aria-hidden="true"></div>
+        <div class="stage__grid" aria-hidden="true"></div>
+        <div class="artifact-stage" id="artifactStage" aria-hidden="true"></div>
+
+        <div class="transition-strips" id="transitionStrips" aria-hidden="true">
+          <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+        </div>
+        <div class="transition-code" id="transitionCode" aria-hidden="true"><span>NEXT ACT</span><b>02</b><small id="transitionName">制度坐标</small></div>
+
+        <!-- 01 / 序章 -->
+        <section class="scene scene--hero is-active" data-scene="0" data-node="2003" data-node-keys="2003,2008,2016,2023,2026" data-visual-height="118" aria-label="第一幕 身份迁移" aria-hidden="false">
+          <div class="scene__giant" aria-hidden="true"><span data-giant>2003</span></div>
+          <svg class="kintsugi kintsugi--pos-a" aria-hidden="true"><use href="#kintsugi-a" /></svg>
+          <div class="scene-art-code heritage-canvas heritage-canvas--01 scene__media" aria-hidden="true">
+            <img class="art-asset art-asset--player" src="./assets/art/v7/acts/act01-player.webp" alt="" decoding="async" />
+            <div class="hero-aperture-v66 heritage-accent"><i></i><i></i><b></b></div>
+            <div class="heritage-era-focus heritage-accent"><i></i><i></i><i></i><i></i><i></i></div>
+          </div>
+          <div class="scene__inner hero-layout">
+            <div class="scene__primary" data-primary>
+              <div class="scene__eyebrow" data-reveal><span>ACT 01</span><i></i><span>IDENTITY IN MOTION</span></div>
+              <h1 class="hero-title" data-reveal><span>中国</span><em>电竞</em></h1>
+              <div class="hero-years" data-reveal><span>2003</span><i></i><span>2026</span></div>
+              <p class="scene__thesis" data-reveal>从第 99 个体育项目，到近五亿人的文化现场。</p>
+            </div>
+            <div class="scene__detail hero-detail" data-detail>
+              <div class="era-control interactive" data-interactive data-reveal>
+                <div class="era-control__head"><span id="eraYear">2003</span><small>DRAG / WHEEL THROUGH FIVE ERAS</small></div>
+                <input id="eraRange" type="range" min="0" max="4" step="1" value="0" aria-label="在五个电竞发展节点间切换" data-gesture-ignore />
+                <div class="era-control__copy"><b id="eraTitle">被正式命名</b><p id="eraCopy">电子竞技被列为第 99 个正式体育项目，身份第一次写入体育制度。</p></div>
+              </div>
+              <div class="hero-facts" data-reveal><span><b>4.95亿+</b><small>2025 用户规模</small></span><span><b>11</b><small>2026 亚运小项</small></span></div>
+              <button class="source-chip" type="button" data-open-sources data-reveal>资料 01 / 09 ↗</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- 02 / 制度 -->
+        <section class="scene scene--policy" data-scene="1" data-node="2003" data-node-keys="2003,2008,2015,2016,2019" data-visual-height="142" aria-label="第二幕 制度坐标" aria-hidden="true">
+          <div class="scene__giant" aria-hidden="true"><span data-giant>2003</span></div>
+          <svg class="kintsugi kintsugi--pos-b" aria-hidden="true"><use href="#kintsugi-b" /></svg>
+          <div class="scene-art-code heritage-canvas heritage-canvas--02 scene__media" aria-hidden="true">
+            <img class="art-asset art-asset--document" src="./assets/art/v7/acts/act02-document.webp" alt="" decoding="async" />
+            <div class="heritage-document-scan heritage-accent"><i></i></div>
+          </div>
+          <div class="scene__inner policy-layout-v66">
+            <div class="scene__primary" data-primary role="tabpanel" id="panel-policy" aria-label="制度坐标">
+              <div class="scene__eyebrow" data-reveal><span>ACT 02</span><i></i><span>INSTITUTION / PROFESSION</span></div>
+              <h2 class="sr-only">制度坐标</h2>
+              <div class="policy-record-v66" data-reveal><span id="policyYear">2003</span><div><small id="policyKicker">国家体育项目序列</small><b id="policyTitle">第 99 个正式体育项目</b><p id="policyCopy">电子竞技第一次进入国家体育项目序列，获得制度身份。</p></div></div>
+            </div>
+            <div class="scene__detail policy-detail-v66" data-detail>
+              <div class="node-tabs interactive" data-interactive data-reveal role="tablist" aria-label="政策年份"><button class="is-active" type="button" data-node-button data-scene-target="1" data-node-key="2003" role="tab" aria-selected="true" aria-controls="panel-policy">2003</button><button class="" type="button" data-node-button data-scene-target="1" data-node-key="2008" role="tab" aria-selected="false" aria-controls="panel-policy">2008</button><button class="" type="button" data-node-button data-scene-target="1" data-node-key="2015" role="tab" aria-selected="false" aria-controls="panel-policy">2015</button><button class="" type="button" data-node-button data-scene-target="1" data-node-key="2016" role="tab" aria-selected="false" aria-controls="panel-policy">2016</button><button class="" type="button" data-node-button data-scene-target="1" data-node-key="2019" role="tab" aria-selected="false" aria-controls="panel-policy">2019</button></div>
+              <p class="policy-context" data-reveal>项目 → 规则 → 教育 → 职业</p>
+              <button class="source-chip" type="button" data-open-sources data-reveal>制度资料 ↗</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- 03 / 早期冠军 -->
+        <section class="scene scene--honor" data-scene="2" data-node="2005" data-node-keys="2005,2006,2012,2014,2016" data-visual-height="110" aria-label="第三幕 早期冠军" aria-hidden="true">
+          <div class="scene__giant" aria-hidden="true"><span data-giant>2005</span></div>
+          <svg class="kintsugi kintsugi--pos-c" aria-hidden="true"><use href="#kintsugi-c" /></svg>
+          <div class="scene-art-code heritage-canvas heritage-canvas--03 scene__media" aria-hidden="true">
+            <img class="art-asset art-asset--flag" src="./assets/art/v7/acts/act03-flag.webp" alt="" decoding="async" />
+            <img class="art-asset art-asset--portrait" src="./assets/art/v7/acts/act03-portrait.webp" alt="" decoding="async" />
+            <img class="art-asset art-asset--champion-seal" src="./assets/art/v7/acts/act03-seal.webp" alt="" decoding="async" />
+            <div class="heritage-portrait-scan heritage-accent"><i></i><i></i><i></i></div>
+          </div>
+          <div class="scene__inner honor-layout-v66">
+            <div class="scene__primary" data-primary role="tabpanel" id="panel-honor" aria-label="早期世界冠军">
+              <div class="scene__eyebrow" data-reveal><span>ACT 03</span><i></i><span>EARLY CHAMPIONS</span></div>
+              <h2 class="sr-only">早期世界冠军</h2>
+              <div class="honor-record-v66" data-reveal><span id="honorYear">2005</span><div><small id="honorMark">WCG / WARCRAFT III</small><b id="honorTitle">Sky · WCG 世界冠军</b><p id="honorCopy">李晓峰夺得《魔兽争霸 3》世界冠军，次年完成卫冕。</p></div></div>
+            </div>
+            <div class="scene__detail honor-detail-v66" data-detail>
+              <div class="node-tabs interactive" data-interactive data-reveal role="tablist" aria-label="冠军年份"><button class="is-active" type="button" data-node-button data-scene-target="2" data-node-key="2005" role="tab" aria-selected="true" aria-controls="panel-honor">2005</button><button class="" type="button" data-node-button data-scene-target="2" data-node-key="2006" role="tab" aria-selected="false" aria-controls="panel-honor">2006</button><button class="" type="button" data-node-button data-scene-target="2" data-node-key="2012" role="tab" aria-selected="false" aria-controls="panel-honor">2012 · iG</button><button class="" type="button" data-node-button data-scene-target="2" data-node-key="2014" role="tab" aria-selected="false" aria-controls="panel-honor">2014 · NEWBEE</button><button class="" type="button" data-node-button data-scene-target="2" data-node-key="2016" role="tab" aria-selected="false" aria-controls="panel-honor">2016 · WINGS</button></div>
+              <button class="source-chip" type="button" data-open-sources data-reveal>冠军资料 ↗</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- 04 / 联赛记忆 -->
+        <section class="scene scene--memory" data-scene="3" data-node="ig" data-node-keys="ig,fpx,edg" data-visual-height="88" aria-label="第四幕 联赛记忆" aria-hidden="true">
+          <div class="scene__giant" aria-hidden="true"><span data-giant>16</span></div>
+          <svg class="kintsugi kintsugi--pos-a" aria-hidden="true"><use href="#kintsugi-a" /></svg>
+          <div class="scene-art-code heritage-canvas heritage-canvas--04 scene__media" aria-hidden="true">
+            <img class="art-asset art-asset--film" src="./assets/art/v7/acts/act04-film.webp" alt="" decoding="async" />
+            <div class="film-scan-v66 heritage-accent"></div>
+            <div class="heritage-film-shade heritage-accent"></div>
+          </div>
+          <div class="scene__inner memory-layout-v66">
+            <div class="scene__primary" data-primary role="tabpanel" id="panel-memory" aria-label="联赛冠军事件">
+              <div class="scene__eyebrow" data-reveal><span>ACT 04</span><i></i><span>PUBLIC MEMORY</span></div>
+              <h2 class="sr-only">联赛冠军事件</h2>
+              <div class="memory-scoreboard-v66" data-reveal><div><small id="memoryPlace">INCHEON / 2018</small><span><b id="memoryTeam">iG</b><em id="memoryScore">3 : 0</em><b id="memoryOpponent">FNC</b></span></div><div><b id="memoryTitle">LPL 首个全球总决赛冠军</b><p id="memoryCopy">iG 的胜利结束长期等待，“我们是冠军”成为一代观众的共同语句。</p></div></div>
+            </div>
+            <div class="scene__detail memory-detail-v66" data-detail>
+              <div class="node-tabs interactive" data-interactive data-reveal role="tablist" aria-label="全球总决赛冠军"><button class="is-active" type="button" data-node-button data-scene-target="3" data-node-key="ig" role="tab" aria-selected="true" aria-controls="panel-memory">2018 · iG</button><button class="" type="button" data-node-button data-scene-target="3" data-node-key="fpx" role="tab" aria-selected="false" aria-controls="panel-memory">2019 · FPX</button><button class="" type="button" data-node-button data-scene-target="3" data-node-key="edg" role="tab" aria-selected="false" aria-controls="panel-memory">2021 · EDG</button></div>
+              <button class="source-chip" type="button" data-open-sources data-reveal>赛事资料 ↗</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- 05 / 亚运 -->
+        <section class="scene scene--games" data-scene="4" data-node="2018" data-node-keys="2018,2023" data-visual-height="132" aria-label="第五幕 国家队服" aria-hidden="true">
+          <div class="scene__giant" aria-hidden="true"><span data-giant>2018</span></div>
+          <svg class="kintsugi kintsugi--pos-b" aria-hidden="true"><use href="#kintsugi-b" /></svg>
+          <div class="scene-art-code heritage-canvas heritage-canvas--05 scene__media" aria-hidden="true">
+            <img class="art-asset art-asset--medal" src="./assets/art/v7/acts/act05-medal.webp" alt="" decoding="async" />
+            <div class="heritage-medal-glint heritage-accent"><i></i></div>
+          </div>
+          <div class="scene__inner games-layout-v66">
+            <div class="scene__primary" data-primary role="tabpanel" id="panel-games" aria-label="亚运会电竞成绩">
+              <div class="scene__eyebrow" data-reveal><span>ACT 05</span><i></i><span>NATIONAL COLORS</span></div>
+              <h2 class="sr-only">亚运会电竞成绩</h2>
+              <div class="games-status-v66" data-reveal><span id="gamesYear">2018</span><small id="gamesStatus">DEMONSTRATION</small><b id="gamesLabel">雅加达亚运会 · 表演项目</b><p id="gamesCopy">中国代表队参加三个电竞表演项目，取得 2 金 1 银。</p></div>
+              <div class="games-ledger-v66" data-reveal><span><b id="gamesGold">2</b><small>金牌</small></span><span><b id="gamesOther">1</b><small id="gamesOtherLabel">银牌</small></span></div>
+            </div>
+            <div class="scene__detail games-detail-v66" data-detail>
+              <div class="node-tabs interactive" data-interactive data-reveal role="tablist" aria-label="亚运年份"><button class="is-active" type="button" data-node-button data-scene-target="4" data-node-key="2018" role="tab" aria-selected="true" aria-controls="panel-games">雅加达 2018</button><button class="" type="button" data-node-button data-scene-target="4" data-node-key="2023" role="tab" aria-selected="false" aria-controls="panel-games">杭州 2023</button></div>
+              <button class="source-chip" type="button" data-open-sources data-reveal>亚运资料 ↗</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- 06 / 产业 -->
+        <section class="scene scene--economy" data-scene="5" data-node="revenue" data-node-keys="revenue,users,events,clubs" data-visual-height="104" aria-label="第六幕 产业结构" aria-hidden="true">
+          <div class="scene__giant" aria-hidden="true"><span data-giant>21</span></div>
+          <svg class="kintsugi kintsugi--pos-c" aria-hidden="true"><use href="#kintsugi-c" /></svg>
+          <div class="scene-art-code heritage-canvas heritage-canvas--06 scene__media" aria-hidden="true">
+            <img class="art-asset art-asset--radar" src="./assets/art/v7/acts/act06-radar.webp" alt="" decoding="async" />
+            <div class="heritage-radar-focus heritage-accent"><i></i><i></i><i></i><i></i></div>
+          </div>
+          <div class="scene__inner metric-layout-v66">
+            <div class="scene__primary" data-primary role="tabpanel" id="panel-metric" aria-label="电竞产业数据">
+              <div class="scene__eyebrow" data-reveal><span>ACT 06</span><i></i><span>THE ECONOMY</span></div>
+              <h2 class="sr-only">电竞产业数据</h2>
+              <div class="metric-display-v66" data-reveal><span id="metricValue">293.31</span><small id="metricUnit">亿元</small></div>
+              <div class="metric-copy-v66" data-reveal><b id="metricLabel">同比增长 6.40%</b><p id="metricCopy">直播收入占产业收入的 80.81%，结构仍高度集中。</p></div>
+            </div>
+            <div class="scene__detail metric-detail-v66" data-detail>
+              <div class="node-tabs interactive" data-interactive data-reveal role="tablist" aria-label="产业指标"><button class="is-active" type="button" data-node-button data-scene-target="5" data-node-key="revenue" role="tab" aria-selected="true" aria-controls="panel-metric">产业收入</button><button class="" type="button" data-node-button data-scene-target="5" data-node-key="users" role="tab" aria-selected="false" aria-controls="panel-metric">用户规模</button><button class="" type="button" data-node-button data-scene-target="5" data-node-key="events" role="tab" aria-selected="false" aria-controls="panel-metric">职业赛事</button><button class="" type="button" data-node-button data-scene-target="5" data-node-key="clubs" role="tab" aria-selected="false" aria-controls="panel-metric">俱乐部</button></div>
+              <button class="source-chip" type="button" data-open-sources data-reveal>产业报告 ↗</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- 07 / 城市 -->
+        <section class="scene scene--city" data-scene="6" data-node="shanghai" data-node-keys="shanghai,chengdu,chongqing,hangzhou" data-visual-height="128" aria-label="第七幕 赛事城市" aria-hidden="true">
+          <div class="scene__giant" aria-hidden="true"><span data-giant>25</span></div>
+          <svg class="kintsugi kintsugi--pos-a" aria-hidden="true"><use href="#kintsugi-a" /></svg>
+          <div class="scene-art-code heritage-canvas heritage-canvas--07 scene__media" aria-hidden="true">
+            <img class="art-asset art-asset--map" src="./assets/art/v7/acts/act07-map.webp" alt="" decoding="async" />
+            <img class="art-asset art-asset--venue" src="./assets/art/v7/acts/act07-venue.webp" alt="" decoding="async" />
+            <div class="heritage-city-focus heritage-accent"><i></i><i></i><i></i><i></i></div>
+          </div>
+          <div class="scene__inner city-layout-v66">
+            <div class="scene__primary" data-primary role="tabpanel" id="panel-city" aria-label="电竞赛事城市">
+              <div class="scene__eyebrow" data-reveal><span>ACT 07</span><i></i><span>OFFLINE GEOGRAPHY</span></div>
+              <h2 class="sr-only">电竞赛事城市</h2>
+              <div class="city-fact-v66" data-reveal><span id="cityValue">19.2%</span><div><small id="cityKicker">2025 线下赛事举办占比</small><b id="cityName">上海</b><p id="cityCopy">2025 年全国线下电竞赛事举办数量占比第一。</p></div></div>
+            </div>
+            <div class="scene__detail city-detail-v66" data-detail>
+              <div class="node-tabs interactive" data-interactive data-reveal role="tablist" aria-label="赛事城市"><button class="is-active" type="button" data-node-button data-scene-target="6" data-node-key="shanghai" role="tab" aria-selected="true" aria-controls="panel-city">上海</button><button class="" type="button" data-node-button data-scene-target="6" data-node-key="chengdu" role="tab" aria-selected="false" aria-controls="panel-city">成都</button><button class="" type="button" data-node-button data-scene-target="6" data-node-key="chongqing" role="tab" aria-selected="false" aria-controls="panel-city">重庆</button><button class="" type="button" data-node-button data-scene-target="6" data-node-key="hangzhou" role="tab" aria-selected="false" aria-controls="panel-city">杭州场馆</button></div>
+              <div class="city-mode-v66" data-reveal><span>54% 全程线下</span><span>37% 混合</span><span>9% 纯线上</span></div>
+              <button class="source-chip" type="button" data-open-sources data-reveal>城市资料 ↗</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- 08 / 职业 -->
+        <section class="scene scene--career" data-scene="7" data-node="training" data-node-keys="training,data,broadcast,operation" data-visual-height="146" aria-label="第八幕 职业链条" aria-hidden="true">
+          <div class="scene__giant" aria-hidden="true"><span data-giant>29</span></div>
+          <svg class="kintsugi kintsugi--pos-b" aria-hidden="true"><use href="#kintsugi-b" /></svg>
+          <div class="scene-art-code heritage-canvas heritage-canvas--08 scene__media" aria-hidden="true">
+            <img class="art-asset art-asset--blueprint" src="./assets/art/v7/acts/act08-blueprint.webp" alt="" decoding="async" />
+            <div class="heritage-blueprint-focus heritage-accent"><i></i><i></i><i></i><i></i></div>
+          </div>
+          <div class="scene__inner career-layout-v66">
+            <div class="scene__primary" data-primary role="tabpanel" id="panel-career" aria-label="电竞职业链条">
+              <div class="scene__eyebrow" data-reveal><span>ACT 08</span><i></i><span>BEYOND THE PLAYERS</span></div>
+              <h2 class="sr-only">电竞职业链条</h2>
+              <div class="career-years-v66" data-reveal><span><b>2016</b><small>专业进入目录</small></span><span><b>2019</b><small>两项新职业</small></span></div>
+              <div class="role-flow-v66" data-reveal><span id="roleIndex">01</span><div><small id="roleEnglish">TRAINING</small><b id="roleTitle">选手 · 教练 · 陪练</b><p id="roleCopy">训练计划、版本研究、对手分析与竞技状态管理构成赛场之前的工作。</p></div></div>
+            </div>
+            <div class="scene__detail career-detail-v66" data-detail>
+              <div class="node-tabs interactive" data-interactive data-reveal role="tablist" aria-label="职业链条"><button class="is-active" type="button" data-node-button data-scene-target="7" data-node-key="training" role="tab" aria-selected="true" aria-controls="panel-career">赛训</button><button class="" type="button" data-node-button data-scene-target="7" data-node-key="data" role="tab" aria-selected="false" aria-controls="panel-career">数据</button><button class="" type="button" data-node-button data-scene-target="7" data-node-key="broadcast" role="tab" aria-selected="false" aria-controls="panel-career">制播</button><button class="" type="button" data-node-button data-scene-target="7" data-node-key="operation" role="tab" aria-selected="false" aria-controls="panel-career">运营</button></div>
+              <button class="source-chip" type="button" data-open-sources data-reveal>职业资料 ↗</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- 09 / 出海 -->
+        <section class="scene scene--global" data-scene="8" data-node="audience" data-node-keys="audience,peak,mobile,genre" data-visual-height="116" aria-label="第九幕 全球回响" aria-hidden="true">
+          <div class="scene__giant" aria-hidden="true"><span data-giant>33</span></div>
+          <svg class="kintsugi kintsugi--pos-c" aria-hidden="true"><use href="#kintsugi-c" /></svg>
+          <div class="scene-art-code heritage-canvas heritage-canvas--09 scene__media" aria-hidden="true">
+            <img class="art-asset art-asset--globe" src="./assets/art/v7/acts/act09-globe.webp" alt="" decoding="async" />
+            <div class="heritage-global-focus heritage-accent"><i></i><i></i><i></i><i></i></div>
+          </div>
+          <div class="scene__inner global-layout-v66">
+            <div class="scene__primary" data-primary role="tabpanel" id="panel-global" aria-label="中国电竞全球传播数据">
+              <div class="scene__eyebrow" data-reveal><span>ACT 09</span><i></i><span>GLOBAL TRANSMISSION</span></div>
+              <h2 class="sr-only">中国电竞全球传播数据</h2>
+              <div class="reach-number-v66" data-reveal><span id="reachValue">1000万+</span><div><small id="reachKicker">2025 / GLOBAL AUDIENCE</small><b id="reachTitle">海外观众</b><p id="reachCopy">2025 年，中国自研电竞赛事吸引超过千万海外观众。</p></div></div>
+            </div>
+            <div class="scene__detail global-detail-v66" data-detail>
+              <div class="node-tabs interactive" data-interactive data-reveal role="tablist" aria-label="全球传播指标"><button class="is-active" type="button" data-node-button data-scene-target="8" data-node-key="audience" role="tab" aria-selected="true" aria-controls="panel-global">观众</button><button class="" type="button" data-node-button data-scene-target="8" data-node-key="peak" role="tab" aria-selected="false" aria-controls="panel-global">峰值</button><button class="" type="button" data-node-button data-scene-target="8" data-node-key="mobile" role="tab" aria-selected="false" aria-controls="panel-global">移动电竞</button><button class="" type="button" data-node-button data-scene-target="8" data-node-key="genre" role="tab" aria-selected="false" aria-controls="panel-global">产品类型</button></div>
+              <div class="reach-regions-v66" data-reveal><span>东南亚</span><span>中东</span><span>拉丁美洲</span></div>
+              <button class="source-chip" type="button" data-open-sources data-reveal>出海资料 ↗</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- 10 / 未来 -->
+        <section class="scene scene--future" data-scene="9" data-node="content" data-node-keys="content,city,technology,talent" data-visual-height="128" aria-label="第十幕 下一场" aria-hidden="true">
+          <div class="scene__giant" aria-hidden="true"><span data-giant>37</span></div>
+          <svg class="kintsugi kintsugi--pos-a" aria-hidden="true"><use href="#kintsugi-a" /></svg>
+          <div class="scene-art-code heritage-canvas heritage-canvas--10 scene__media" aria-hidden="true">
+            <img class="art-asset art-asset--stones" src="./assets/art/v7/acts/act10-stones.webp" alt="" decoding="async" />
+            <img class="art-asset art-asset--door" src="./assets/art/v7/acts/act10-door.webp" alt="" decoding="async" />
+            <div class="heritage-future-route heritage-accent"><i></i><i></i></div>
+          </div>
+          <div class="scene__inner future-layout-v66">
+            <div class="scene__primary" data-primary role="tabpanel" id="panel-future" aria-label="2026 亚运与电竞未来议题">
+              <div class="scene__eyebrow" data-reveal><span>ACT 10</span><i></i><span>2026 &amp; BEYOND</span></div>
+              <h2 class="sr-only">2026 亚运与电竞未来议题</h2>
+              <div class="future-stats-v66" data-reveal><span><b>11</b><small>2026 亚运小项</small></span><span><b>23</b><small>中国队运动员</small></span><span><b>04</b><small>参赛小项</small></span></div>
+              <div class="future-answer-v66" data-reveal><span id="futureIndex">01</span><div><small>FUTURE LEVER</small><b id="futureTitle">让比赛值得被反复观看</b><p id="futureCopy">从赛事叙事、转播语言到本土文化表达，内容质量决定长期影响力。</p></div></div>
+            </div>
+            <div class="scene__detail future-detail-v66" data-detail>
+              <div class="node-tabs interactive" data-interactive data-reveal role="tablist" aria-label="未来议题"><button class="is-active" type="button" data-node-button data-scene-target="9" data-node-key="content" role="tab" aria-selected="true" aria-controls="panel-future">内容</button><button class="" type="button" data-node-button data-scene-target="9" data-node-key="city" role="tab" aria-selected="false" aria-controls="panel-future">城市</button><button class="" type="button" data-node-button data-scene-target="9" data-node-key="technology" role="tab" aria-selected="false" aria-controls="panel-future">技术</button><button class="" type="button" data-node-button data-scene-target="9" data-node-key="talent" role="tab" aria-selected="false" aria-controls="panel-future">人才</button></div>
+              <div class="future-actions" data-reveal><button class="luxe-button magnetic" type="button" data-go="0"><span>重新阅读</span><i>↗</i></button><button class="luxe-button luxe-button--ghost" type="button" data-open-sources><span>核对资料</span><i>→</i></button></div>
+            </div>
+          </div>
+        </section>
+
+        <div class="scroll-cue" id="scrollCue" aria-hidden="true"><span id="flowCue">NODE / 01—40</span><i><b></b></i><small id="flowState">OPENING · 2003</small></div>
+      </div>
+    </main>
+
+    <!-- 节点切换通报（屏幕阅读器）。 -->
+    <div class="sr-only" id="liveRegion" role="status" aria-live="polite"></div>
+
+    <noscript>此页面需要 JavaScript 以播放切页与交互动画。</noscript>
+  </body>
+</html>
