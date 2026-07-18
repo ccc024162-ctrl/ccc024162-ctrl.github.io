@@ -1,7 +1,7 @@
 {
   "project": "china-esports-black-gold-motion",
-  "version": "8.4.0",
-  "buildId": "2026-07-18-v8.4-flicker-fix",
+  "version": "8.5.0",
+  "buildId": "2026-07-18-v8.5-flicker-mobile",
   "builtAtUtc": "2026-07-18T00:00:00Z",
   "archiveRoot": "index.html + assets/",
   "runtime": "Vite + TypeScript + GSAP Observer + Three.js + DOM/CSS/SVG/WebP + WebGL2 + HTMLAudio BGM",
